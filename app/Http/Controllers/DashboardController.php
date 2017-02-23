@@ -3,8 +3,6 @@
 namespace App\Http\Controllers;
 
 use App\Author;
-use Illuminate\Http\Request;
-use App\Book as Book;
 use Illuminate\Support\Facades\Auth;
 
 class DashboardController extends Controller
@@ -28,7 +26,7 @@ class DashboardController extends Controller
     {
         $authorBooks = Author::find(Auth::User()->id);
         if ($authorBooks->books->isEmpty()) {
-            return view('main', ['authorBooks' => null]);
+            return view('dashboard', ['authorBooks' => null]);
         }
         return view('dashboard', ['authorBooks' => $authorBooks->books]);
     }

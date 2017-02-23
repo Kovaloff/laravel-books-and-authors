@@ -3,7 +3,6 @@
 namespace App\Http\Controllers;
 
 use App\Author;
-use Illuminate\Http\Request;
 use App\Book;
 
 class HomeController extends Controller

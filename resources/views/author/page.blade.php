@@ -8,7 +8,7 @@
                     <div class="panel-heading">All {{$author->name }}'s books</div>
 
                     <div class="panel-body">
-                        @if(!is_null($author))
+                        @if(!is_null($author) && !$author->books->isEmpty())
                             <table class="table">
                                 <thead>
                                 <tr>

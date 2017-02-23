@@ -10,7 +10,6 @@
                 </ul>
                 <div class="tab-content">
                     <div id="books" class="tab-pane fade in active">
-
                         @if(!is_null($books))
                             <table class="table">
                                 <thead>
@@ -60,7 +59,7 @@
                                     <tr>
                                         <th scope="row">{{ $author->id }}</th>
                                         <td>{{ $author->name }}</td>
-                                        <td>{{ $book->created_at }}</td>
+                                        <td>{{ $author->created_at }}</td>
                                         <td>
                                             <a href="{{ route('author.page', $author->id) }}">
                                                 <button type="button" class="btn btn-default btn-sm btn-success">
