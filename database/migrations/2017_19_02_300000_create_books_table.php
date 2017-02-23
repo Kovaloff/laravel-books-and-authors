@@ -16,7 +16,7 @@ class CreateBooksTable extends Migration
         $this->down();
         Schema::create('books', function (Blueprint $table) {
             $table->increments('id');
-            $table->string('ISBN');
+            $table->string('isbn');
             $table->string('title');
             $table->string('subtitle');
             $table->timestamps();
