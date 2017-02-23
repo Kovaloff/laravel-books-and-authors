@@ -14,9 +14,10 @@ php artisan key:generate
 
 php artisan config:clear
 
+Change DB conf in .env file
+
 php artisan migrate
 
 php artisan db:seed
 
 
-Change DB conf in .env file
