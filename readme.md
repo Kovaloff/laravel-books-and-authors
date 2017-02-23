@@ -21,3 +21,4 @@ php artisan migrate
 php artisan db:seed
 
 
+And you can register new user or login with the test credentials test1@gmail.com  test2017
