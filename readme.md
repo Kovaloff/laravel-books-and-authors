@@ -22,3 +22,6 @@ php artisan db:seed
 
 
 And you can register new user or login with the test credentials test1@gmail.com  test2017
+
+
+Also you can get author info by site_url/api/v1/author/{id}
